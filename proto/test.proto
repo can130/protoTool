@@ -1,0 +1,12 @@
+syntax = "proto3";
+message mytag
+{
+	int32 tag= 1;
+}
+
+message mymsg
+{
+	int32 len = 1;
+	repeated int32 typ = 2;
+	mytag tag = 3;
+}
